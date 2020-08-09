@@ -32,5 +32,5 @@ func main() {
 	rand.Shuffle(len(attendees), func(i, j int) { attendees[i], attendees[j] = attendees[j], attendees[i] })
 
 	winning := attendees[0]
-	fmt.Printf("%s (%s)", winning.Name, winning.ProfileLink)
+	fmt.Printf("%s (%s)\n", winning.Name, winning.ProfileLink)
 }
